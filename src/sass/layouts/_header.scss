@@ -1,0 +1,138 @@
+.top-header,
+.container-middle,
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login__list,
+.nav_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.top-header__wrap {
+    background: $midlegray;
+    padding: 16px 0 17px 0;
+}
+
+    .help__item {
+        padding-left: 12px;
+        border-left: 1px solid #e1e1e1;
+            &:first-child {
+                padding-left: 0;
+                border-left: none;
+            }
+    }
+
+    .login__link {
+        display: block;
+        color: #fff;
+        font-size: 0.813rem;
+        font-weight: 500;
+        
+    }
+
+    .login__item {
+        margin-right: 35px;
+        transition: color .1s ease-in-out;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover .login__link {
+                color: $accentColor;
+            }
+    }
+
+    .fa-user,
+    .fa-lock {
+        margin-right: 9px;
+    }
+
+
+
+.middle__wrap {
+    background: $darkGray;
+    padding: 34px 0;
+}
+
+    .menu__wrap {
+        padding: 19px 0;
+    }
+
+        .tel-link {
+            color: #d8d8d8;
+            font-size: 1.063rem;
+            font-weight: 600;
+        }
+
+        .fa-mobile-alt {
+            color: $accentColor;
+            font-size: 32px;
+            vertical-align: middle;
+            margin-right: 13px;
+        }
+
+        .logo {
+            margin-right: 105px;
+        }
+
+        .chart {
+            position: relative;
+        }
+
+            .chart a {
+                display: inline-block;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background: $darkGray;
+                    width: 29px;
+                    height: 29px;
+                    top: 10px;
+                    right: 2px;
+                    border-radius: 50%;
+                }
+            }
+
+                .fa-shopping-basket {
+                    padding: 14px;
+                    background: $accentColor;
+                    border-radius: 3px;
+                    margin-right: 22px;
+                    font-size: 1.25rem;
+                    color: #fff;
+                }
+
+                .caunt-chart {
+                    position: absolute;
+                    color: #e0e3ed;
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    line-height: 2.625rem;
+                    top: 3px;
+                    right: 13px;
+                }
+
+
+.nav_link {
+    color: #2a2a2a;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 2.625rem;
+    text-transform: uppercase;
+    padding: 30px 15px 34px 15px;
+    transition: background .2s ease-in-out,
+                color .2s ease-in-out,
+                border .2s ease-in-out;
+    &:hover {
+        background: $accentColor;
+        border-top: 4px solid #2a2a2a;
+        color: #fff;
+    }
+}
+

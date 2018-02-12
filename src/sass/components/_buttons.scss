@@ -1,0 +1,172 @@
+.arrow-wrap {
+    position: absolute;
+}
+
+.arow-btn {
+  border: 1px solid #000;
+  padding: 9px 12px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.arrow-next::before {
+    content: "\f104";
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+}
+
+.arrow-prew::before {
+    content: "\f105" ;
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+}
+
+.activ-arrow {
+    background: $accentColor;
+    color: #fff;
+    border: 1px solid $accentColor;
+}
+
+.stars::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-weight: 400;
+    font-family: 'Font Awesome 5 Free';
+}
+
+
+.arrow-next__gallery {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-prew__gallery {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.expand-btn::before {
+    content: "\f31e";
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    color: #000;
+    cursor: pointer;
+}
+
+.btn__to-cart {
+    display: inline-block;
+    background: $accentColor;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 9px 13px 9px;
+        &::before {
+            content: "\f291" ;
+            font-weight: 900;
+            font-family: 'Font Awesome 5 Free';
+            margin-right: 7px;
+        }
+}
+
+.dot-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+.dot__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.dot__item {
+    margin-right: 13px;
+        &:last-child{
+            margin-right: 0;
+        }
+}
+.dot__link {
+    width: 13px;
+    height: 13px;
+    background: #e2e2e2;
+    border-radius: 50%;
+    display: block;
+}
+
+.activ-dot {
+    background: #2a2a2a;
+    
+}
+
+.line {
+    width: 92%;
+    height: 3px;
+    background: #e2e2e2;
+    margin-right: 26px;
+    position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 44px;
+            height: 3px;
+            background: #000;
+            top: 0;
+            left: 0;
+        }
+}
+
+/***
+*
+* BUTTON UP
+*
+***/
+
+.btn-up {
+  position: fixed;
+  bottom: -50px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  background: rgba(81, 86, 95, 0.9);
+  z-index: 999;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: .8s;
+}
+
+    .btn-up__active{
+    bottom: 50px;
+    }
+
+    .btn-up:hover{
+    border: 2px solid $accentColor;
+    }
+
+    .btn-up::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid $accentColor;
+    border-left: 3px solid$accentColor;
+    transform: rotate(45deg);
+    top: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    }
+
+/*************/
+

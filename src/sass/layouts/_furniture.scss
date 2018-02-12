@@ -1,0 +1,59 @@
+.furniture {
+    background: $gray;
+    padding: 39px 0 284px 0;
+}
+
+.products-wrap {
+    position: relative;
+}
+
+.products {
+    position: absolute;
+    top: 38px;
+    left: 0;
+}
+
+.furniture-heder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-furniture {
+    color: #dedede;
+    font-size: 1.5rem;
+    font-weight: 600;
+    // line-height: 3.966rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.furniture-nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+.furniture-nav__item {
+    margin-right: 13px;
+        &:last-child {
+            margin-right: 0;
+        }
+}
+
+.furniture-nav__link {
+    color: #dedede;
+    font-size: 0.813rem;
+    font-weight: 400;
+    transition: color .2s ease-in-out;
+        &:hover {
+            color:  #ffffff;
+        }
+}
+.fa-angle-right {
+    margin-left: 13px;
+}
+
+

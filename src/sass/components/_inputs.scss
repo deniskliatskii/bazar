@@ -1,0 +1,349 @@
+.search-form {
+    width: 43%;
+    border: 1px solid #000;
+    padding: 0 15px;
+    position: relative;
+    
+}
+
+.label-search {
+    position: absolute;
+    right: 15px;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    &:before {
+        content: "\f3ee";
+        font-weight: 600;
+        font-family: 'Font Awesome 5 Brands';
+        color: #2a2a2a;
+        cursor: pointer;
+    }
+}
+.label-search:hover.label-search::before {
+    color: $accentColor;
+}
+
+.input-search {
+    border: none;
+    background: none;
+    padding: 15px 0 15px 13px;
+    border-left: 1px solid #000;
+    outline: none;
+}
+
+ .label-categories::before {
+        content: "\f0ca";
+        font-weight: 900;
+        font-family: 'Font Awesome 5 Free';
+        color: $accentColor;
+        margin-right: 15px;
+        cursor: pointer;
+}
+
+.select-categories {
+    border: none;
+    background: none;
+    color: #2a2a2a;
+    font-size: 0.875rem;
+    font-weight: 400;
+    outline: none;
+}
+
+
+// *** placeholder styles ***
+
+// input-mail
+
+.input-search::-webkit-input-placeholder {
+    font-family: 'Popins', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #a4a4a4;
+}
+
+.input-search::-moz-placeholder {          /* Firefox 19+ */
+    font-family: 'Popins', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #a4a4a4;
+   
+}
+
+
+.input-search:-moz-placeholder {           /* Firefox 18- */
+    font-family: 'Popins', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #a4a4a4;
+    
+}
+
+
+.input-search:-ms-input-placeholder {       /* IE */
+    font-family: 'Popins', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #a4a4a4;
+   
+}
+        
+// сдвиг placeholder-а вправо при фокусе
+
+// input-search
+
+.input-search::-webkit-input-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.5s ease;
+}
+.input-search::-moz-placeholder {
+    text-indent: 0px;   
+    transition: text-indent 0.5s ease;
+}
+.input-search:-moz-placeholder {
+    text-indent: 0px;   
+    transition: text-indent 0.5s ease;
+}
+.input-search:-ms-input-placeholder {
+    text-indent: 0px;   
+    transition: text-indent 0.5s ease;
+}
+.input-search:focus::-webkit-input-placeholder {
+    text-indent: 500px; 
+    transition: text-indent 0.5s ease;
+}
+.input-search:focus::-moz-placeholder  {
+    text-indent: 500px; 
+    transition: text-indent 0.5s ease;
+}
+.input-search:focus:-moz-placeholder {
+    text-indent: 500px; 
+    transition: text-indent 0.5s ease;
+}
+.input-search:focus:-ms-input-placeholder {
+    text-indent: 500px; 
+    transition: text-indent 0.5s ease;
+}
+
+.review__input {
+    padding: 19px 20px 21px 13px;
+    width: 445px;
+    border: none;
+    background: none;
+    border: 1px solid #c2c2c2;
+    outline-color: $accentColor;
+}
+
+.input-btn {
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    background: #000;
+    cursor: pointer;
+}
+
+textarea {
+    border: none;
+    background: none;
+    border: 1px solid #c2c2c2;
+    outline-color: $accentColor;
+}
+
+// *** placeholder styles ***
+
+// input-btn
+
+.review__input::-webkit-input-placeholder {
+    font-family: 'Popins', sans-serif;
+    color: #676767;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.review__input::-moz-placeholder {          /* Firefox 19+ */
+    font-family: 'Popins', sans-serif;
+    color: #676767;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+
+.review__input:-moz-placeholder {           /* Firefox 18- */
+    font-family: 'Popins', sans-serif;
+    color: #676767;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+
+.review__input:-ms-input-placeholder {       /* IE */
+    font-family: 'Popins', sans-serif;
+    color: #676767;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.review__input::-webkit-input-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.5s ease;
+}
+.review__input::-moz-placeholder {
+    text-indent: 0px;   
+    transition: text-indent 0.5s ease;
+}
+.review__input:-moz-placeholder {
+    text-indent: 0px;   
+    transition: text-indent 0.5s ease;
+}
+.review__input:-ms-input-placeholder {
+    text-indent: 0px;   
+    transition: text-indent 0.5s ease;
+}
+.review__input:focus::-webkit-input-placeholder {
+    text-indent: 500px; 
+    transition: text-indent 0.5s ease;
+}
+.review__input:focus::-moz-placeholder  {
+    text-indent: 500px; 
+    transition: text-indent 0.5s ease;
+}
+.review__input:focus:-moz-placeholder {
+    text-indent: 500px; 
+    transition: text-indent 0.5s ease;
+}
+.review__input:focus:-ms-input-placeholder {
+    text-indent: 500px; 
+    transition: text-indent 0.5s ease;
+}
+
+
+
+.newsletter-form {
+    width: 486px;
+    background: #fff;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 15px 20px 16px 14px;
+}
+.news__input-email {
+    width: 80%;
+    border: none;
+    border-left: 1px solid #bfbfbf;
+    padding: 0 0 0 18px;
+    outline: none;
+       
+}
+
+.news__input-submit {
+    border: none;
+    background: #fff;
+    padding: 16px;
+    cursor: pointer; 
+    outline-color: $accentColor;
+    &::before {
+        content: "\f061";
+        font-weight: 900;
+        font-family: 'Font Awesome 5 Free';
+        color: $accentColor;
+    }
+}
+// *** placeholder styles ***
+
+// news__input-email
+
+.news__input-email::-webkit-input-placeholder {
+    font-family: 'Popins', sans-serif;
+    color: #b4b4b4;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.news__input-email::-moz-placeholder {          /* Firefox 19+ */
+    font-family: 'Popins', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #a4a4a4;
+   
+}
+
+
+.news__input-email:-moz-placeholder {           /* Firefox 18- */
+    font-family: 'Popins', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #a4a4a4;
+    
+}
+
+
+.news__input-email:-ms-input-placeholder {       /* IE */
+    font-family: 'Popins', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #a4a4a4;
+   
+}
+        
+// сдвиг placeholder-а вправо при фокусе
+
+// news__input-email
+
+.news__input-email::-webkit-input-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.5s ease;
+}
+.news__input-email::-moz-placeholder {
+    text-indent: 0px;   
+    transition: text-indent 0.5s ease;
+}
+.news__input-email:-moz-placeholder {
+    text-indent: 0px;   
+    transition: text-indent 0.5s ease;
+}
+.news__input-email:-ms-input-placeholder {
+    text-indent: 0px;   
+    transition: text-indent 0.5s ease;
+}
+.news__input-email:focus::-webkit-input-placeholder {
+    text-indent: 500px; 
+    transition: text-indent 0.5s ease;
+}
+.news__input-email:focus::-moz-placeholder  {
+    text-indent: 500px; 
+    transition: text-indent 0.5s ease;
+}
+.news__input-email:focus:-moz-placeholder {
+    text-indent: 500px; 
+    transition: text-indent 0.5s ease;
+}
+.news__input-email:focus:-ms-input-placeholder {
+    text-indent: 500px; 
+    transition: text-indent 0.5s ease;
+}
+
+.select-currency {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 0.813rem;
+    font-weight: 500;
+    outline: none;
+    transition: color .1s ease-in-out;
+    cursor: pointer;
+     &:hover {
+         color: $accentColor;
+     }
+}
+
+.currency-option {
+    background: none;
+    color: #676767;
+    font-size: 0.813rem;
+    font-weight: 500;
+    outline-color: $accentColor;
+}

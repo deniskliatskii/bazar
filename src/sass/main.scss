@@ -1,0 +1,35 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+// Fontawesome
+@import "../libs/fontawesome/fontawesome-all";
+// Normalize
+@import "../libs/normalize/normalize";
+// Slick slider style
+@import "slick/slick.scss";
+@import "slick/slick-theme.scss";
+
+// Adjustment & mixin
+@import "misc/_var.scss";
+@import "misc/_mixin.scss";
+@import "misc/_adjustment.scss";
+
+//  *** COMPONENTS ***
+@import "components/_social.scss";
+//butons
+@import "components/_buttons.scss";
+@import "components/_inputs.scss";
+@import "components/_modalwindow.scss";
+
+
+
+//  *** LAYOUTS ***
+@import "layouts/_header.scss";
+@import "layouts/_furniture.scss";
+@import "layouts/_products.scss";
+@import "layouts/_review.scss";
+@import "layouts/_new-products.scss";
+@import "layouts/_footer.scss";
+
+
+
+

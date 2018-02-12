@@ -1,0 +1,115 @@
+.footer-top {
+    background: $darkGray;
+    padding: 62px 0 53px 0;
+}
+
+.footer-bottom {
+    background: #2a2a2a;
+    padding: 39px 0;
+}
+
+.footer-top__wrap {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.footer-info__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-info__item {
+    margin-bottom: 13px;
+        &:last-child {
+            margin-bottom: 25px;
+        }
+
+            &:hover .footer-info__link {
+                color: $accentColor;
+            }
+}
+            
+.footer-info__item:hover .footer-info__link:before {
+    height: 1px;
+    
+}
+
+
+.footer-info__link {
+    color: #a9a9a9;
+    font-size: 0.875rem;
+    font-weight: 400;
+    transition: color .1s ease-in-out;
+    position: relative;
+    padding: 3px 0;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0px;
+            left: 0;
+            bottom: 0;
+            background: $accentColor;
+        }
+    
+}
+
+.footer-item__title {
+    color: #fff;
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.625rem;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+
+.pay-cards__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+    
+.pay-cards__item {
+    margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.copyright {
+    margin-right: 215px;
+    color: #a9a9a9;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.copyright__link {
+    color: #a9a9a9;
+    font-size: 0.875rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 16px;
+            background: #a9a9a9;
+            top: 0;
+            right: -7px;
+        }
+}

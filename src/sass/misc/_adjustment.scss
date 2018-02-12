@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+/*
+ .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}  
+*/
+
+// Центрирующий контейнер
+.container {
+    @include container;
+} 
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+/*
+ @media screen and (max-width: 1220px) {
+    .container {
+      width: 992px; }
+}
+
+@media screen and (max-width: 1102px) {
+
+    .container {
+      width: 768px;
+    }
+}
+
+@media screen and (max-width: 798px) {
+
+    .container{
+      width: 576px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width: 470px) {
+    .container {
+        width: auto;
+    }
+}
+
+
+
+*/
