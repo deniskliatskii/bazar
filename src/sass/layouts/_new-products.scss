@@ -56,7 +56,24 @@
 }
 
 .card-btn__wrap {
-    margin-right: 20px;
+    width: 61%;
+    display: flex;    
+    // margin-right: 20px;
+    @media screen and (max-width: 1220px) {
+        margin-bottom: 10px;
+    }
+}
+
+.cards-btn__compare {
+    margin-right: 10px;
+
+    @media screen and (max-width: 1220px) {
+        margin-right: 20px;
+    }
+}
+
+.cards-btn__wishlist {
+    margin-right: 5px;
 }
 
 .card-price {
@@ -64,14 +81,22 @@
     font-weight: 600;
     padding: 11px 8px 10px 9px;
     transition: background .1s ease-in-out;
+
+    @media screen and (max-width: 1220px) {
+        text-align: center;
+    }
 }
 
 .card__original-price {
-    margin: 0 4px 0 0;
+    margin: 0;
     color: #a5a5a5;
     font-size: 1rem;
     font-weight: 300;
     align-self: center;
+
+    @media screen and (max-width: 1220px) {
+        font-size: 1.2rem;
+    }
 }
 
 
@@ -156,7 +181,9 @@
             top: -2px;
             left: 50%;
             transform: translateX(-50%);
-
+    }
+    @media screen and (max-width: 1220px) {
+        flex-direction: column;
     }
 }
 

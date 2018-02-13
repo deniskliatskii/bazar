@@ -1,16 +1,10 @@
 .furniture {
     background: $gray;
     padding: 39px 0 284px 0;
-}
 
-.products-wrap {
-    position: relative;
-}
-
-.products {
-    position: absolute;
-    top: 38px;
-    left: 0;
+    @media screen and (max-width: 1220px) {
+        padding: 39px 0;
+    }
 }
 
 .furniture-heder {
@@ -26,6 +20,10 @@
     text-transform: uppercase;
     padding: 0;
     margin: 0;
+
+    @media screen and (max-width: 1220px) {
+        margin-bottom: 25px;
+    }
 }
 
 .furniture-nav__list {

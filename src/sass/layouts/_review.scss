@@ -1,6 +1,11 @@
 .detailed-info {
     padding-top: 483px;
     margin-bottom: 60px;
+
+    @media screen and (max-width: 1220px) {
+        padding-top: 39px;
+        margin-bottom: 40px;
+    }
 }
 
 .detailed-info__container {
@@ -77,6 +82,10 @@
     margin-top: 17px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1220px) {
+        flex-wrap: wrap;
+    }
 }
 
 .active-tab {

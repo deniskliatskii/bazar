@@ -5,7 +5,12 @@
     justify-content: space-between;
     align-items: center;
 }
+.menu{
+    @media screen and (max-width: 1065px) {
+        flex-direction: column;
+    }
 
+}
 .login__list,
 .nav_list {
     list-style: none;
@@ -133,6 +138,10 @@
         background: $accentColor;
         border-top: 4px solid #2a2a2a;
         color: #fff;
+    }
+
+    @media screen and (max-width: 1065px) {
+        padding: 3px 15px;
     }
 }
 
