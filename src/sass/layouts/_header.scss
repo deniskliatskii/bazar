@@ -44,6 +44,9 @@
     .login__item {
         margin-right: 35px;
         transition: color .1s ease-in-out;
+        @media screen and (max-width: 660px) {
+            margin-right: 25px;
+        }
             &:last-child {
                 margin-right: 0;
             }
@@ -72,6 +75,9 @@
             color: #d8d8d8;
             font-size: 1.063rem;
             font-weight: 600;
+            @media screen and (max-width: 660px) {
+                display: none;
+            }
         }
 
         .fa-mobile-alt {
@@ -83,6 +89,14 @@
 
         .logo {
             margin-right: 105px;
+            @media screen and (max-width: 660px) {
+                margin: 0 30px 0 0;
+                
+            }
+            @media screen and (max-width: 345px) {
+                margin: 0 30px 0 0;
+                
+            }
         }
 
         .chart {
@@ -101,6 +115,11 @@
                     top: 10px;
                     right: 2px;
                     border-radius: 50%;
+                    @media screen and (max-width: 345px) {
+                        width: 25px;
+                        height: 25px;
+                        top: 10px;
+                    }
                 }
             }
 
@@ -111,6 +130,9 @@
                     margin-right: 22px;
                     font-size: 1.25rem;
                     color: #fff;
+                    @media screen and (max-width: 345px) {
+                        padding: 11px;
+                    }
                 }
 
                 .caunt-chart {
@@ -121,6 +143,9 @@
                     line-height: 2.625rem;
                     top: 3px;
                     right: 13px;
+                    @media screen and (max-width: 345px) {
+                        top: 1px;
+                    }
                 }
 
 
@@ -144,4 +169,88 @@
         padding: 3px 15px;
     }
 }
+
+/* RSPONSIVE MENU */
+
+.input__menu {
+    display: none;
+}
+
+.label__menu {
+    color: #fff;
+    font-weight: 900;
+    background: $accentColor;
+    padding: 15px;
+    border-radius: 0 5px 5px 0;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    transition: transform .5s ease-in-out;
+    transform: translateX(-100%);
+}
+
+    @media screen and (max-width: 660px) {
+        .label__menu {
+            transform: translateX(0);
+        }
+
+        .help__item {
+            display: none;
+        }
+
+        .login {
+            margin: 0 auto;
+        }
+
+        .overlay-menu {
+            position: fixed;
+            z-index:2;
+            top: 0;
+            left: 0;
+            background: rgba(42, 42, 42, 0.911);
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: none;
+            transition: display .2s ease-in-out;
+        }
+
+        .nav-header {
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #fff;
+            z-index: 3;
+            border-right: 2px solid $accentColor;
+            transition: transform .6s ease-in-out;
+            transform-origin: left;
+            transform: rotateY(90deg);
+        }
+
+        .nav_list {
+            display: block;
+        }
+
+        .nav_link {
+            width: 100%;
+            display: block;
+            border: none;
+             &:hover {
+                background: $accentColor;
+                border: none;
+                color: #fff;
+             }
+        }
+    }
+
+    .input__menu:checked ~ .nav-header {
+        transform: rotateY(0);
+        transition: transform .6s ease-in-out;
+    }
+    .input__menu:checked ~ .overlay-menu {
+        display: block;
+    }
+
 

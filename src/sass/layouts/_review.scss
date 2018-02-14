@@ -17,6 +17,9 @@
     display: flex;
     padding: 0;
     margin: 0;
+    @media screen and (max-width: 568px) {
+        display: block;
+    }
 }
 
 .tabs__item:hover .tabs__link {
@@ -33,6 +36,13 @@
     border-right: 1px solid #c2c2c2;
     display: block;
     transition: color .2s ease-in-out;
+    @media screen and (max-width: 687px) {
+        text-transform: none;
+        padding: 15px 10px;
+    }
+    @media screen and (max-width: 568px) {
+        border-right: none;
+    }
 }
 
 .tabs-content__wrap {
@@ -91,4 +101,7 @@
 .active-tab {
     color: $accentColor;
     border-bottom: none;
+    @media screen and (max-width: 568px) {
+        border-bottom: 1px solid #c2c2c2;
+    }
 }

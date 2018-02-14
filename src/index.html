@@ -17,13 +17,7 @@
     <header class="header">
 
         
-        <!-- responsive nav -->
-        <!-- <input class="input__menu" type="checkbox" name="menu" id="menu">
-        <label class="label__menu" for="menu">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </label>
-        <label for="menu" class="overlay-menu"></label> -->
-        <!-- ./responsive nav -->
+     
         
         <div class="top-header__wrap">
             <div class="container top-header">
@@ -66,9 +60,11 @@
                         <a href="#"><img src="img/logo/logo.png" alt="LOGO"></a>
                     </div>
                     
-                    <div class="chart">
-                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                        <span class="caunt-chart">0</span>
+                    <div class="chart-wrap">
+                        <div class="chart">
+                            <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                            <span class="caunt-chart">0</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,6 +90,14 @@
                         
                     </form>
     
+                    <!-- responsive nav -->
+                    <input class="input__menu" type="checkbox" name="menu" id="menu">
+                    <label class="label__menu" for="menu">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <label for="menu" class="overlay-menu"></label>
+                    
+                    <!-- responsive nav -->
                     <nav class="nav-header">
                         <ul class="nav_list">
                             <li class="nav_item">
@@ -331,21 +335,21 @@
                             <a class="cards-view" href="#">Quick View</a>
                             <a class="btn__to-cart btn__to-cart--cards" href="#">Add to cart</a>
                         </div>
-                            <div class="cards__content">
-                                <h2 class="new-products-cards__title">Aenean Ru Bristique</h2>
-                                <div class="stars new-products__card--stars"></div>
-                                <div class="card-footer">
-                                    <div class="card-btn__wrap">
-                                        <a class="btn-border wishlist cards-btn__wishlist" href="#">
-                                            <i class="far fa-heart"></i>
-                                        </a>
-                                        <a class="btn-border compare cards-btn__compare" href="#">
-                                            <i class="fas fa-exchange-alt"></i>
-                                        </a>
-                                    </div>
-                                    <p class="drop-price card-price">$30.00</p>
+                        <div class="cards__content">
+                            <h2 class="new-products-cards__title">Aenean Ru Bristique</h2>
+                            <div class="stars new-products__card--stars"></div>
+                            <div class="card-footer">
+                                <div class="card-btn__wrap">
+                                    <a class="btn-border wishlist cards-btn__wishlist" href="#">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                    <a class="btn-border compare cards-btn__compare" href="#">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </a>
                                 </div>
+                                <p class="drop-price card-price">$30.00</p>
                             </div>
+                        </div>
     
                     </div>
                     <div class="new-products__card">
@@ -354,47 +358,21 @@
                             <a class="cards-view" href="#">Quick View</a>
                             <a class="btn__to-cart btn__to-cart--cards" href="#">Add to cart</a>
                         </div>
-                            <div class="cards__content">
-                                <h2 class="new-products-cards__title">Aenean Ru Bristique</h2>
-                                <div class="stars new-products__card--stars"></div>
-                                <div class="card-footer">
-                                    <div class="card-btn__wrap">
-                                        <a class="btn-border wishlist cards-btn__wishlist" href="#">
-                                            <i class="far fa-heart"></i>
-                                        </a>
-                                        <a class="btn-border compare cards-btn__compare" href="#">
-                                            <i class="fas fa-exchange-alt"></i>
-                                        </a>
-                                    </div>
-                                    <p class="drop-price card-price">$30.00</p>
+                        <div class="cards__content">
+                            <h2 class="new-products-cards__title">Aenean Ru Bristique</h2>
+                            <div class="stars new-products__card--stars"></div>
+                            <div class="card-footer">
+                                <div class="card-btn__wrap">
+                                    <a class="btn-border wishlist cards-btn__wishlist" href="#">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                    <a class="btn-border compare cards-btn__compare" href="#">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </a>
                                 </div>
+                                <p class="drop-price card-price">$30.00</p>
                             </div>
-    
-                    </div>
-                    <div class="new-products__card">
-                        <div class="sale">sale</div>
-                        <div class="sale-bg"></div>
-                        <div class="img-cards__wrap">
-                            <img src="img/new-prod.jpg" alt="Image Product">
-                            <a class="cards-view" href="#">Quick View</a>
-                            <a class="btn__to-cart btn__to-cart--cards" href="#">Add to cart</a>
                         </div>
-                            <div class="cards__content">
-                                <h2 class="new-products-cards__title">Aenean Ru Bristique</h2>
-                                <div class="stars new-products__card--stars"></div>
-                                <div class="card-footer">
-                                    <div class="card-btn__wrap">
-                                        <a class="btn-border wishlist cards-btn__wishlist" href="#">
-                                            <i class="far fa-heart"></i>
-                                        </a>
-                                        <a class="btn-border compare cards-btn__compare" href="#">
-                                            <i class="fas fa-exchange-alt"></i>
-                                        </a>
-                                        <p class="original-price card__original-price">$35.00</p>
-                                    </div>
-                                    <p class="drop-price card-price">$30.00</p>
-                                </div>
-                            </div>
     
                     </div>
                     <div class="new-products__card">
@@ -405,38 +383,66 @@
                             <a class="cards-view" href="#">Quick View</a>
                             <a class="btn__to-cart btn__to-cart--cards" href="#">Add to cart</a>
                         </div>
-                            <div class="cards__content">
-                                <h2 class="new-products-cards__title">Aenean Ru Bristique</h2>
-                                <div class="stars new-products__card--stars"></div>
-                                <div class="card-footer">
-                                    <div class="card-btn__wrap">
-                                        <a class="btn-border wishlist cards-btn__wishlist" href="#">
-                                            <i class="far fa-heart"></i>
-                                        </a>
-                                        <a class="btn-border compare cards-btn__compare" href="#">
-                                            <i class="fas fa-exchange-alt"></i>
-                                        </a>
-                                        <p class="original-price card__original-price">$20.00</p>
-                                    </div>
-                                    <p class="drop-price card-price">$30.00</p>
+                        <div class="cards__content">
+                            <h2 class="new-products-cards__title">Aenean Ru Bristique</h2>
+                            <div class="stars new-products__card--stars"></div>
+                            <div class="card-footer">
+                                <div class="card-btn__wrap">
+                                    <a class="btn-border wishlist cards-btn__wishlist" href="#">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                    <a class="btn-border compare cards-btn__compare" href="#">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </a>
+                                    <p class="original-price card__original-price">$35.00</p>
                                 </div>
+                                <p class="drop-price card-price">$30.00</p>
                             </div>
+                        </div>
+    
+                    </div>
+                    <div class="new-products__card">
+                        <div class="sale">sale</div>
+                        <div class="sale-bg"></div>
+                        <div class="img-cards__wrap">
+                            <img src="img/new-prod.jpg" alt="Image Product">
+                            <a class="cards-view" href="#">Quick View</a>
+                            <a class="btn__to-cart btn__to-cart--cards" href="#">Add to cart</a>
+                        </div>
+                        <div class="cards__content">
+                            <h2 class="new-products-cards__title">Aenean Ru Bristique</h2>
+                            <div class="stars new-products__card--stars"></div>
+                            <div class="card-footer">
+                                <div class="card-btn__wrap">
+                                    <a class="btn-border wishlist cards-btn__wishlist" href="#">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                    <a class="btn-border compare cards-btn__compare" href="#">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </a>
+                                    <p class="original-price card__original-price">$20.00</p>
+                                </div>
+                                <p class="drop-price card-price">$30.00</p>
+                            </div>
+                        </div>
     
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="newsletter-wrap">
-            <p class="form-title">newsletter:</p>
-            <form action="">
-                <div class="newsletter-form">
-                    <label for="newsletter"><i class="fas fa-envelope fa-envelope__newsletter"></i></label>
-                    <input class="news__input-email" type="email" name="newsletter" id="newsletter"  placeholder="Enter your email address">
+        <section class="newsletter">
+            <div class="newsletter-wrap">
+                <p class="form-title">newsletter:</p>
+                <div class="newsletter-form__wrap">
+                    <form class="newsletter-form" action="">
+                        <label for="newsletter"><i class="fas fa-envelope fa-envelope__newsletter"></i></label>
+                        <input class="news__input-email" type="email" name="newsletter" id="newsletter"  placeholder="Enter your email address">
+                    </form>
+                    <button class="news__input-submit" type="submit"></button>
                 </div>
-                <button class="news__input-submit" type="submit"></button>
-            </form>
-        </div>
+            </div>
+        </section>
 
     </main> <!-- ./main content -->
 

@@ -12,6 +12,14 @@
     justify-content: space-between;
     margin: 0 -15px;
     margin-bottom: 60px;
+    @media screen and (max-width: 925px) {
+        margin: 0 -5px;
+    }
+
+    @media screen and (max-width: 856px) {
+        flex-direction: column;
+        margin: 0;
+    }
 }
 .new-products__card {
     position: relative;
@@ -27,8 +35,22 @@
     &:hover{
         box-shadow: 0 0 5px $accentColor;
     }
-
-   
+    
+    @media screen and (max-width: 925px) {
+        margin: 0 5px;
+    }
+    @media screen and (max-width: 856px) {
+        width: 90%;
+        display: flex;
+        margin: 0 auto 30px auto;
+    }
+    @media screen and (max-width: 603px) {
+        width: 60%;
+        display: block;
+    }
+    @media screen and (max-width: 500px) {
+        width: 90%;
+    }
 }
 
  .sale-bg {
@@ -85,6 +107,12 @@
     @media screen and (max-width: 1220px) {
         text-align: center;
     }
+    @media screen and (max-width: 856px) {
+        width: 40%;
+    }
+    @media screen and (max-width: 603px) {
+        width: 100%;
+    }
 }
 
 .card__original-price {
@@ -106,6 +134,16 @@
         display: block;
         width: 100%;
     }
+    @media screen and (max-width: 856px) {
+        width: 40%;
+    }
+    @media screen and (max-width: 713px) {
+        width: 50%;
+    }
+    @media screen and (max-width: 603px) {
+        width: 100%
+    }
+    
 }
 
 .cards-view {
@@ -116,12 +154,20 @@
     font-size: 0.813rem;
     font-weight: 500;
     color: #fff;
-    left: 11px;
+    left: 0;
     bottom: 0;
-    transform: translateY(-400%)rotate(180deg);
+    transform: translateY(-400%);
     opacity: 0;
     transition: transform .4s ease-in-out,
                 opacity .3s ease-in-out;
+    @media screen and (max-width: 1020px) {
+        text-transform: none;
+        font-weight: normal;
+        padding: 12px 8px;
+        font-size: 12px;
+    }
+
+   
 }
 
 .new-products__card:hover .cards-view {
@@ -133,17 +179,27 @@
     background: #000;
     position: absolute;
     padding: 12px 11px 12px 8px;
-    right: 11px;
+    right: 0;
     bottom: 0;
-    transform: translateY(-400%)rotate(-180deg);
+    transform: translateY(-400%);
     opacity: 0;
     transition: transform .4s ease-in-out,
                 opacity .3s ease-in-out;
+    @media screen and (max-width: 1020px) {
+        text-transform: none;
+        font-weight: normal;
+        padding: 12px 8px;
+        font-size: 12px;
+    }
+
+   
 }
 
 .new-products__card:hover .btn__to-cart--cards {
     transform: translateY(0)rotate(0);
     opacity: 1;
+    
+
 }
 
 .cards__content {
@@ -151,7 +207,20 @@
     border-right: 1px solid #e2e2e2;
     border-bottom: 1px solid #e2e2e2;
     border-left: 1px solid #e2e2e2;
+    @media screen and (max-width: 856px) {
+        width: 60%;
+        padding: 40px 11px 12px;
+        border: none;
+    }
+    @media screen and (max-width: 713px) {
+        width: 50%;
+    }
+
+    @media screen and (max-width: 603px) {
+        width: 100%
+    }
 }
+
 .new-products-cards__title {
     color: #2a2a2a;
     font-size: 1rem;
@@ -187,13 +256,23 @@
     }
 }
 
+.newsletter {
+    background: $bgNewsLetter;
+    padding: 36px 0;
+    
+}
 
 .newsletter-wrap {
-    background: $bgNewsLetter;
+    
     display: flex;
-    padding: 36px 0;
-    justify-content: center;
+    width: 65%;
+    margin: 0 auto;
+    // justify-content: center;
     align-items: center;
+    @media screen and (max-width: 1230px) {
+        flex-direction: column;
+    }
+    
 }
 
 .form-title {
@@ -204,9 +283,7 @@
     margin-right: 52px;
 }
 
-.news__input-email {
-    margin-right: 20px;
-}
+
 
 .fa-envelope__newsletter {
     position: relative;
