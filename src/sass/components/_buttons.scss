@@ -3,11 +3,12 @@
 }
 
 .arow-btn {
-  border: 1px solid #000;
-  padding: 9px 12px;
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
+    background: none;
+    border: 1px solid #000;
+    padding: 9px 12px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
 }
 
 .arrow-next::before {

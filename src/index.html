@@ -140,11 +140,11 @@
                         <p class="title-furniture">Furniture</p>
                         
                         <nav class="furniture-nav">
-                            <ul class="furniture-nav__list">
+                            <ol class="furniture-nav__list">
                                 <li class="furniture-nav__item"><a href="#" class="furniture-nav__link">Home<i class="fas fa-angle-right"></i></a></li>
                                 <li class="furniture-nav__item"><a href="#" class="furniture-nav__link">Furniture<i class="fas fa-angle-right"></i></a></li>
                                 <li class="furniture-nav__item"><a href="#" class="furniture-nav__link">Chair</a></li>
-                            </ul>
+                            </ol>
                         </nav>
                         
                     </div>
@@ -155,12 +155,12 @@
         
                                 <div class="gallery-prewiew">
                                     <img src="img/gallery/image-1.jpg" alt="Gallery Image">
-                                    <a href="#" class="btn-border expand-btn"></a>
+                                    <button class="btn-border expand-btn"></button>
                                 </div>
         
-                                <div class="gallery-item__wrap">
+                                <div class="gallery-item__wrap" id="carousel">
                                     
-                                    <ul class="gallery-item">
+                                    <ul class="gallery-item images">
                                         <li class="gallery-min"><img src="img/gallery/gallery-1.jpg" alt="Gallery-item"></li>
                                         <li class="gallery-min"><img src="img/gallery/gallery-2.jpg" alt="Gallery-item"></li>
                                         <li class="gallery-min"><img src="img/gallery/gallery-3.jpg" alt="Gallery-item"></li>
@@ -172,8 +172,8 @@
                                         <li class="gallery-min"><img src="img/gallery/gallery-9.jpg" alt="Gallery-item"></li>
                                     </ul>
                                     
-                                    <a href="#" class="arow-btn arrow-next arrow-next__gallery"></a>
-                                    <a href="#" class="arow-btn arrow-prew arrow-prew__gallery activ-arrow"></a>
+                                    <button class="arow-btn arrow-next arrow-next__gallery activ-arrow"></button>
+                                    <button class="arow-btn arrow-prew arrow-prew__gallery"></button>
                                     
                                 </div>
                             </div>
@@ -181,8 +181,8 @@
                             <div class="products__right-column">
         
                                 <div class="arrow-wrap arrow-wrap__products">
-                                    <a href="#" class="arow-btn arrow-next"></a>
-                                    <a href="#" class="arow-btn arrow-prew activ-arrow"></a>
+                                    <button class="arow-btn arrow-next"></button>
+                                    <button class="arow-btn arrow-prew activ-arrow"></button>
                                 </div>
         
                                 <div class="products__title">
@@ -201,16 +201,16 @@
                                 
                                 <div class="to-cart">
                                     <a class="btn__to-cart" href="#">Add to cart</a>
-                                    <a class="btn-border wishlist" href="#"><i class="far fa-heart"></i></a>
-                                    <a class="btn-border compare" href="#"><i class="fas fa-exchange-alt"></i></a>
-                                    <a class="btn-border message" href="#"><i class="far fa-envelope"></i></a>
+                                    <button class="btn-border wishlist"><i class="far fa-heart"></i></button>
+                                    <button class="btn-border compare"><i class="fas fa-exchange-alt"></i></button>
+                                    <button class="btn-border message"><i class="far fa-envelope"></i></button>
                                 </div>
         
                                 <div class="quantity">
                                     <p class="quantity-title">Quantity:</p>
                                     <span class="btn-border quantity-count">2</span>
-                                    <a class="btn-border quantity-min" href="#"><i class="fas fa-minus"></i></a>
-                                    <a class="btn-border quantity-plus" href="#"><i class="fas fa-plus"></i></a>
+                                    <button class="btn-border quantity-min"><i class="fas fa-minus"></i></button>
+                                    <button class="btn-border quantity-plus"><i class="fas fa-plus"></i></button>
                                 </div>
         
                                 <div class="overview">
@@ -271,8 +271,8 @@
                             </p>
                             <p class="reviews-title">Add a review</p>
                             <p class="rating-title">Your Rating</p>
-                            <p class="choice-rating">Bad<span class="stars"></span>Good</p>
                             <form class="form-review" action="">
+                                <p class="choice-rating">Bad<span class="stars"></span>Good</p>
                                 <label for="review">Your Review</label>
                                 <textarea name="review" id="review" cols="30" rows="10"></textarea>
                                 <div class="input-review__wrap">
@@ -331,21 +331,23 @@
                         <div class="sale">sale</div>
                         <div class="sale-bg"></div>
                         <div class="img-cards__wrap">
-                            <img src="img/new-prod.jpg" alt="Image Product">
-                            <a class="cards-view" href="#">Quick View</a>
-                            <a class="btn__to-cart btn__to-cart--cards" href="#">Add to cart</a>
+                            <a class="img-link" href="#">
+                                <img src="img/new-prod.jpg" alt="Image Product">
+                            </a>
+                            <p class="cards-view">Quick View</p>
+                            <p class="btn__to-cart btn__to-cart--cards">Add to cart</p>
                         </div>
                         <div class="cards__content">
-                            <h2 class="new-products-cards__title">Aenean Ru Bristique</h2>
+                            <a href="#" class="new-products-cards__title">Aenean Ru Bristique</a>
                             <div class="stars new-products__card--stars"></div>
                             <div class="card-footer">
                                 <div class="card-btn__wrap">
-                                    <a class="btn-border wishlist cards-btn__wishlist" href="#">
+                                    <button class="btn-border wishlist cards-btn__wishlist">
                                         <i class="far fa-heart"></i>
-                                    </a>
-                                    <a class="btn-border compare cards-btn__compare" href="#">
+                                    </button>
+                                    <button class="btn-border compare cards-btn__compare">
                                         <i class="fas fa-exchange-alt"></i>
-                                    </a>
+                                    </button>
                                 </div>
                                 <p class="drop-price card-price">$30.00</p>
                             </div>
@@ -354,21 +356,23 @@
                     </div>
                     <div class="new-products__card">
                         <div class="img-cards__wrap">
-                            <img src="img/new-prod.jpg" alt="Image Product">
-                            <a class="cards-view" href="#">Quick View</a>
-                            <a class="btn__to-cart btn__to-cart--cards" href="#">Add to cart</a>
+                            <a class="img-link" href="#">
+                                <img src="img/new-prod.jpg" alt="Image Product">
+                            </a>
+                            <p class="cards-view">Quick View</p>
+                            <p class="btn__to-cart btn__to-cart--cards">Add to cart</p>
                         </div>
                         <div class="cards__content">
-                            <h2 class="new-products-cards__title">Aenean Ru Bristique</h2>
+                            <a href="#" class="new-products-cards__title">Aenean Ru Bristique</a>
                             <div class="stars new-products__card--stars"></div>
                             <div class="card-footer">
                                 <div class="card-btn__wrap">
-                                    <a class="btn-border wishlist cards-btn__wishlist" href="#">
+                                    <button class="btn-border wishlist cards-btn__wishlist">
                                         <i class="far fa-heart"></i>
-                                    </a>
-                                    <a class="btn-border compare cards-btn__compare" href="#">
+                                    </button>
+                                    <button class="btn-border compare cards-btn__compare">
                                         <i class="fas fa-exchange-alt"></i>
-                                    </a>
+                                    </button>
                                 </div>
                                 <p class="drop-price card-price">$30.00</p>
                             </div>
@@ -379,21 +383,23 @@
                         <div class="sale">sale</div>
                         <div class="sale-bg"></div>
                         <div class="img-cards__wrap">
-                            <img src="img/new-prod.jpg" alt="Image Product">
-                            <a class="cards-view" href="#">Quick View</a>
-                            <a class="btn__to-cart btn__to-cart--cards" href="#">Add to cart</a>
+                            <a class="img-link" href="#">
+                                <img src="img/new-prod.jpg" alt="Image Product">
+                            </a>
+                            <p class="cards-view">Quick View</p>
+                            <p class="btn__to-cart btn__to-cart--cards">Add to cart</p>
                         </div>
                         <div class="cards__content">
-                            <h2 class="new-products-cards__title">Aenean Ru Bristique</h2>
+                            <a href="#" class="new-products-cards__title">Aenean Ru Bristique</a>
                             <div class="stars new-products__card--stars"></div>
                             <div class="card-footer">
                                 <div class="card-btn__wrap">
-                                    <a class="btn-border wishlist cards-btn__wishlist" href="#">
+                                    <button class="btn-border wishlist cards-btn__wishlist">
                                         <i class="far fa-heart"></i>
-                                    </a>
-                                    <a class="btn-border compare cards-btn__compare" href="#">
+                                    </button>
+                                    <button class="btn-border compare cards-btn__compare">
                                         <i class="fas fa-exchange-alt"></i>
-                                    </a>
+                                    </button>
                                     <p class="original-price card__original-price">$35.00</p>
                                 </div>
                                 <p class="drop-price card-price">$30.00</p>
@@ -405,21 +411,21 @@
                         <div class="sale">sale</div>
                         <div class="sale-bg"></div>
                         <div class="img-cards__wrap">
-                            <img src="img/new-prod.jpg" alt="Image Product">
-                            <a class="cards-view" href="#">Quick View</a>
-                            <a class="btn__to-cart btn__to-cart--cards" href="#">Add to cart</a>
+                            <a class="img-link" href="#"><img src="img/new-prod.jpg" alt="Image Product"></a>
+                            <p class="cards-view">Quick View</p>
+                            <p class="btn__to-cart btn__to-cart--cards">Add to cart</p>
                         </div>
                         <div class="cards__content">
-                            <h2 class="new-products-cards__title">Aenean Ru Bristique</h2>
+                            <a href="#" class="new-products-cards__title">Aenean Ru Bristique</a>
                             <div class="stars new-products__card--stars"></div>
                             <div class="card-footer">
                                 <div class="card-btn__wrap">
-                                    <a class="btn-border wishlist cards-btn__wishlist" href="#">
+                                    <button class="btn-border wishlist cards-btn__wishlist">
                                         <i class="far fa-heart"></i>
-                                    </a>
-                                    <a class="btn-border compare cards-btn__compare" href="#">
+                                    </button>
+                                    <button class="btn-border compare cards-btn__compare">
                                         <i class="fas fa-exchange-alt"></i>
-                                    </a>
+                                    </button>
                                     <p class="original-price card__original-price">$20.00</p>
                                 </div>
                                 <p class="drop-price card-price">$30.00</p>
@@ -431,25 +437,25 @@
             </div>
         </section>
 
-        <section class="newsletter">
-            <div class="newsletter-wrap">
-                <p class="form-title">newsletter:</p>
-                <div class="newsletter-form__wrap">
-                    <form class="newsletter-form" action="">
-                        <label for="newsletter"><i class="fas fa-envelope fa-envelope__newsletter"></i></label>
-                        <input class="news__input-email" type="email" name="newsletter" id="newsletter"  placeholder="Enter your email address">
-                    </form>
-                    <button class="news__input-submit" type="submit"></button>
-                </div>
-            </div>
-        </section>
-
+        
     </main> <!-- ./main content -->
-
+    
     <!-- ********************************************* -->
     
     <!-- footer -->
     <footer class="main-footer">
+            <section class="newsletter">
+                <div class="newsletter-wrap">
+                    <p class="form-title">newsletter:</p>
+                    <form class="newsletter-form" action="">
+                        <div class="newsletter-form__wrap">
+                            <label for="newsletter"><i class="fas fa-envelope fa-envelope__newsletter"></i></label>
+                            <input class="news__input-email" type="email" name="newsletter" id="newsletter"  placeholder="Enter your email address">
+                        </div>
+                            <button class="news__input-submit" type="submit"></button>
+                        </form>
+                </div>
+            </section>
         <div class="footer-top">
         
             <div class="container">

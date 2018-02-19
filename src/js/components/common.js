@@ -22,17 +22,17 @@ $(function () {
 
     })
 
-    var btnNext = $('.arrow-next__gallery');
-    var btnPrew = $('.arrow-prew__gallery');
-    // var widthImage = $('.gallery-min').width();
-    var widthImage = 0;
-    $(btnNext).click(function (event) {
-        event.preventDefault();
-        var widthImage = widthImage - 89; 
-        $('.gallery-item').css('margin-left', widthImage);
+    // var btnNext = $('.arrow-next__gallery');
+    // var btnPrew = $('.arrow-prew__gallery');
+    // // var widthImage = $('.gallery-min').width();
+    // var widthImage = 0;
+    // $(btnNext).click(function (event) {
+    //     event.preventDefault();
+    //     var widthImage = widthImage - 89; 
+    //     $('.gallery-item').css('margin-left', widthImage);
 
-        // console.log(widthImage);
-    })
+    //     // console.log(widthImage);
+    // })
 
        
     /*

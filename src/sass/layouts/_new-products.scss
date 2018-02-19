@@ -86,6 +86,11 @@
     }
 }
 
+.btn-border {
+    background: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
 .cards-btn__compare {
     margin-right: 10px;
 
@@ -130,6 +135,13 @@
 
 .img-cards__wrap {
     position: relative;
+    
+    
+}
+
+.img-link {
+    display: block;
+    width: 100%;
     & > img {
         display: block;
         width: 100%;
@@ -143,7 +155,6 @@
     @media screen and (max-width: 603px) {
         width: 100%
     }
-    
 }
 
 .cards-view {
@@ -222,6 +233,7 @@
 }
 
 .new-products-cards__title {
+    display: block;
     color: #2a2a2a;
     font-size: 1rem;
     font-weight: 600;
