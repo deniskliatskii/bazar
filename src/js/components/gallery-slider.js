@@ -32,26 +32,26 @@
     
 
 
-    var expandBtn = document.querySelector('.expand-btn');
+    // var expandBtn = document.querySelector('.expand-btn');
 
-    expandBtn.addEventListener('click', function () {
-        var atrSrc = document.querySelector('.gallery-prewiew').firstElementChild.getAttribute('src');
-        // console.log(atributImg);
-        var modalImg = document.createElement('img');
-        modalImg.src = atrSrc;
-        document.body.appendChild(modalImg);
-        modalImg.classList.add('modal-images');
+    // expandBtn.addEventListener('click', function () {
+    //     var atrSrc = document.querySelector('.gallery-prewiew').firstElementChild.getAttribute('src');
+    //     // console.log(atributImg);
+    //     var modalImg = document.createElement('img');
+    //     modalImg.src = atrSrc;
+    //     document.body.appendChild(modalImg);
+    //     modalImg.classList.add('modal-images');
         
-        var overlay = document.createElement('div');
-        document.body.appendChild(overlay);
-        overlay.classList.add('modal-overlay');
+    //     var overlay = document.createElement('div');
+    //     document.body.appendChild(overlay);
+    //     overlay.classList.add('modal-overlay');
 
 
         
-        overlay.addEventListener('click', function () {
-            overlay.remove();
-            modalImg.remove();
-        })
-    })
+    //     overlay.addEventListener('click', function () {
+    //         overlay.remove();
+    //         modalImg.remove();
+    //     })
+    // })
 
 }());

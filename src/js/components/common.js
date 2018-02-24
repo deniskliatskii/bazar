@@ -1,13 +1,57 @@
 $(function () {
-    // $('.your').slick({
-        
-    // });
+  
+/*
+*
+* GALLERY
+*
+*/
 
-    /*
-    *
-    * Tabs
-    *
-    */
+    //Gallery full images
+    $('.gallery-min a').click(function (event) {
+        event.preventDefault();
+        var imgAtribut = $(this).attr('href');
+        $('.gallery-prewiew img').attr( { src: imgAtribut } );
+    })
+
+    $('.expand-btn').click(function () {
+        var modalWindowContent = $('.gallery-prewiew img').attr('src');
+        $('body').append('<img class="modal-images">');
+        $('.modal-images').attr({ src: modalWindowContent});
+
+        $('body').append(' <div class="modal-overlay"> ');
+            
+        $('.modal-overlay').click(function () {
+            $('.modal-overlay').remove();
+            $('.modal-images').remove();
+        })
+    })
+
+/*
+*
+* COUNT TO CART
+*
+*/  
+
+    var numCount = 1;
+    $('.quantity-count').text(numCount);
+
+    $('.quantity-plus').click(function (event) {
+        $('.quantity-count').text(++numCount);
+    })
+
+    $('.quantity-min').click(function (event) {
+        if (numCount > 1) {
+            $('.quantity-count').text(--numCount);
+        }
+    })
+
+
+/*
+*
+* Tabs
+*
+*/
+
     $('.tabs-content__wrap > div:not(:first)').hide();
     $('.tabs__list a').click(function (event) {
         event.preventDefault();
@@ -22,73 +66,23 @@ $(function () {
 
     })
 
-    // var btnNext = $('.arrow-next__gallery');
-    // var btnPrew = $('.arrow-prew__gallery');
-    // // var widthImage = $('.gallery-min').width();
-    // var widthImage = 0;
-    // $(btnNext).click(function (event) {
-    //     event.preventDefault();
-    //     var widthImage = widthImage - 89; 
-    //     $('.gallery-item').css('margin-left', widthImage);
-
-    //     // console.log(widthImage);
-    // })
-
-       
-    /*
-    *
-    * Header drop down
-    *
-    */
-
-    // $(document).scroll(function () {
-    //     if (($(document).scrollTop() > 400) & ($(document).width() > 800)) {
-    //         $('.main-header').addClass('header_fixed');
-    //     } else
-    //         $('.main-header').removeClass('header_fixed');
-    // });
-
-
-    /*
-    *
-    * Scrol to section
-    *
-    */
-
-    $('nav a').on('click', function (event) {
-        event.preventDefault();
-        var ellClick = $(this).attr('href');
-        var distScroll = $(ellClick).offset().top;
-        $('html, body').animate(
-            { 'scrollTop': distScroll }, 1500);
-    })
     
+/*
+*
+* Button Up
+*
+*/
 
-    /*
-    *
-    * Show more
-    *
-    */
-
-    $('.all-services__btn').on('click', function (event) {
-        event.preventDefault();
-        $('.all-services').slideToggle();
-    })
-
-    /*
-    *
-    * Button Up
-    *
-    */
-
-    $('body').append('<button class="btn-up"/>');
+    $('body').append('<button class="btn-up"</button>');
 
     $('.btn-up').click(function () {
-        $('html, body').animate({ 'scrollTop': 0 }, 1000);
+        $('html, body').animate({
+            'scrollTop': 0 
+        }, 1000);
     });
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 1000) {
+        if ( $(window).scrollTop() > 1000 ) {
             $('.btn-up').addClass('btn-up__active');
         } else {
             $('.btn-up').removeClass('btn-up__active');

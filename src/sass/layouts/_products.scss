@@ -210,28 +210,30 @@
                 position: absolute;
                 right: 10px;
                 bottom: 10px;
+                margin: 0;
             }
 
         .gallery-item__wrap {
             position: relative;
-            width: 100%;
+            width: 95%;
+            margin: 0 auto;
+        }
+        .gallery-tumbs {
             overflow: hidden;
         }
 
-           
-
-                .gallery-item {
-                    list-style: none;
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    padding: 0;
-                    margin: 0;
-                    
-                }
+            .gallery-item {
+                list-style: none;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+                margin: 0;
+                
+            }
 
                 .gallery-min {
-                    padding: 0 12px;
+                    padding-right: 20px;
                 }
 
                 .modal-images {

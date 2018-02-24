@@ -139,13 +139,10 @@
     
 }
 
-.img-link {
-    display: block;
-    width: 100%;
-    & > img {
+.img-link a {
         display: block;
         width: 100%;
-    }
+   
     @media screen and (max-width: 856px) {
         width: 40%;
     }

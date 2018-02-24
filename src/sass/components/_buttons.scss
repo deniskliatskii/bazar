@@ -38,16 +38,18 @@
 
 .arrow-next__gallery {
     position: absolute;
-    left: 0;
+    left: -10px;
     top: 50%;
     transform: translateY(-50%);
+    outline: none;
 }
 
 .arrow-prew__gallery {
     position: absolute;
-    right: 0;
+    right: -10px;
     top: 50%;
     transform: translateY(-50%);
+    outline: none;
 }
 
 .expand-btn::before {

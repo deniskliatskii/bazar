@@ -45,7 +45,6 @@ gulp.task('scripts', function () {
     return gulp.src('src/js/components/*.js')
     .pipe(plumber())
     .pipe(concat('main-prod.js'))
-    .pipe(uglify())
     .pipe(gulp.dest('src/js'))
 });
 
@@ -103,6 +102,7 @@ gulp.task('build', ['clean', 'images', 'sass', 'scripts', 'libsJs'], function ()
     .pipe(gulp.dest('dist/fonts'))
            
     const buildJs = gulp.src('src/js/*.js')
+    .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
     
     const buildHtml = gulp.src('src/index.html')
@@ -111,4 +111,4 @@ gulp.task('build', ['clean', 'images', 'sass', 'scripts', 'libsJs'], function ()
 });
 
 //*** Делает вызов - watch просто через команду gulp ***
-gulp.task('default', ['watch']);   
+gulp.task( 'default', ['watch'] );   
