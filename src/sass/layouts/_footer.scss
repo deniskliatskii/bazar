@@ -1,11 +1,61 @@
+.newsletter {
+    background: $bgNewsLetter;
+    padding: 36px 0;
+    @media screen and (max-width: 460px){
+        padding: 25px 0;
+        
+    }
+}
+
+.newsletter-wrap {
+    
+    display: flex;
+    margin: 0 auto;
+    // justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 1230px) {
+        flex-direction: column;
+    }
+    
+}
+
+.form-title {
+    color: $accentColor;
+    font-size: 1.375rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 52px;
+    @media screen and (max-width: 1230px) {
+        margin: 0 0 10px 0;
+    }
+    @media screen and (max-width: 460px){
+        font-size: 18px;
+    }
+}
+
+.fa-envelope__newsletter {
+    position: relative;
+    color: $accentColor;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
 .footer-top {
     background: $darkGray;
     padding: 62px 0 53px 0;
+    @media screen and (max-width: 460px){
+        padding: 30px 0 15px 0;
+        
+    }
 }
 
 .footer-bottom {
     background: #2a2a2a;
     padding: 39px 0;
+    @media screen and (max-width: 460px){
+        padding: 20px 0;
+        
+    }
 }
 
 .footer-top__wrap {
@@ -24,6 +74,12 @@
     margin: 0;
     @media screen and (max-width: 875px) {
         text-align: center;
+    }
+}
+
+.info-block {
+    @media screen and (max-width: 460px){
+        margin-bottom: 25px;
     }
 }
 
@@ -73,6 +129,10 @@
     @media screen and (max-width: 875px) {
         text-align: center;
     }
+    @media screen and (max-width: 460px){
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
 }
 
 .pay-cards__list {
@@ -107,14 +167,24 @@
     }
 }
 
-.copyright {
+.coppyrigt-box{
+    display: flex;
+    align-items: center;
+    // width: 400px;
     margin-right: 215px;
-    color: #a9a9a9;
-    font-size: 0.875rem;
-    font-weight: 400;
     @media screen and (max-width: 875px) {
         margin: 0 0 30px 0;
     }
+    @media screen and (max-width: 430px) {
+        flex-direction: column;
+    }
+}
+.copyright {
+    
+    color: #a9a9a9;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-right: 5px;
 
 }
 

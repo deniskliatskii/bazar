@@ -1,9 +1,12 @@
 .furniture {
     background: $gray;
     padding: 39px 0 284px 0;
-
+    
     @media screen and (max-width: 1220px) {
         padding: 39px 0;
+    }
+    @media screen and (max-width: 480px) {
+        padding: 10px 0;
     }
 }
 
@@ -11,6 +14,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+    }
 }
 .title-furniture {
     color: #dedede;
@@ -24,8 +30,16 @@
     @media screen and (max-width: 1220px) {
         margin-bottom: 25px;
     }
+    @media screen and (max-width: 480px) {
+        margin-bottom: 10px;
+    }
 }
 
+.bread-crumbs__box {
+    @media screen and (max-width: 480px) {
+        margin-bottom: 10px;
+    }
+}
 .furniture-nav__list {
     list-style: none;
     padding: 0;

@@ -10,6 +10,9 @@
 
 .detailed-info__container {
     border: 1px solid #c2c2c2;
+    @media screen and (max-width: 568px) {
+        border: none;
+    }
 }
 
 .tabs__list {
@@ -24,6 +27,10 @@
 
 .tabs__item:hover .tabs__link {
     color: $accentColor;
+    @media screen and (max-width: 568px) {
+        color: #fff;
+        background: $accentColor;
+    }
 }
 
 .tabs__link {
@@ -41,13 +48,23 @@
         padding: 15px 10px;
     }
     @media screen and (max-width: 568px) {
+        border: none;
         border-right: none;
+        border: 1px solid $accentColor;
+        text-align: center;
+        border-radius: 3px;
+        margin-bottom: 2px;
     }
 }
 
 .tabs-content__wrap {
     padding: 31px 43px 69px 37px;
+    @media screen and (max-width: 568px) {
+        padding: 25px 15px;
+
+    }
 }
+
 .reviews-info {
     color: #676767;
     font-size: 14px;
@@ -79,6 +96,21 @@
     margin-bottom: 31px;
 }
 
+
+.active-tab {
+    color: $accentColor;
+    border-bottom: none;
+    @media screen and (max-width: 568px) {
+        border-bottom: 1px solid #c2c2c2;
+    }
+    @media screen and (max-width: 568px) {
+        border-bottom: 1px solid $accentColor;
+        background: $accentColor;
+        color: #fff;
+    }
+}
+
+
 .form-review {
     display: flex;
     flex-direction: column;
@@ -95,13 +127,5 @@
 
     @media screen and (max-width: 1220px) {
         flex-wrap: wrap;
-    }
-}
-
-.active-tab {
-    color: $accentColor;
-    border-bottom: none;
-    @media screen and (max-width: 568px) {
-        border-bottom: 1px solid #c2c2c2;
     }
 }
