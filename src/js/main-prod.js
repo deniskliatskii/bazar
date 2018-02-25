@@ -92,45 +92,6 @@ $(function () {
 
 });
 
-/*
-    *
-    * Modal Window
-    *
-    */
-
-    // $('.btn-login').click(function (event) {
-    //     event.preventDefault();
-    //     $('.modalwindow').show();
-    //     $('.overlay-modal').show();
-    //     $('body').css('overflow', 'hidden');
-    // })
-
-    // $('.material-icons').click(function (event) {
-    //     event.preventDefault();
-    //     $('.modalwindow').hide();
-    //     $('.overlay-modal').hide();
-    //     $('body').css('overflow', '');
-    // })
-
-    // $(document).bind('click keydown', function (event) {
-    //     if (event.keyCode == 27) {
-    //         $('.modalwindow').hide();
-    //         $('.overlay-modal').hide();
-    //         $('body').css('overflow', '');
-    //     }
-    // })
-
-
-/*
-*
-* Price show
-*
-*/
-
-// $('.price-show').not(':first').hide();
-// $('.switch .switch-input').click(function () {
-//     $('.price-show').fadeToggle(300);
-// });
 
 ;(function () {
     var next = document.querySelector('.arrow-next__gallery');
@@ -166,26 +127,6 @@ $(function () {
     
 
 
-    // var expandBtn = document.querySelector('.expand-btn');
-
-    // expandBtn.addEventListener('click', function () {
-    //     var atrSrc = document.querySelector('.gallery-prewiew').firstElementChild.getAttribute('src');
-    //     // console.log(atributImg);
-    //     var modalImg = document.createElement('img');
-    //     modalImg.src = atrSrc;
-    //     document.body.appendChild(modalImg);
-    //     modalImg.classList.add('modal-images');
-        
-    //     var overlay = document.createElement('div');
-    //     document.body.appendChild(overlay);
-    //     overlay.classList.add('modal-overlay');
-
-
-        
-    //     overlay.addEventListener('click', function () {
-    //         overlay.remove();
-    //         modalImg.remove();
-    //     })
-    // })
+    
 
 }());

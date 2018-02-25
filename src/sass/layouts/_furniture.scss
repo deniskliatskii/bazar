@@ -1,4 +1,4 @@
-.furniture {
+.about-product {
     background: $gray;
     padding: 39px 0 284px 0;
     
@@ -10,7 +10,7 @@
     }
 }
 
-.furniture-heder {
+.about-product__heder {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@
         flex-direction: column;
     }
 }
-.title-furniture {
+.about-product__name {
     color: #dedede;
     font-size: 1.5rem;
     font-weight: 600;
@@ -35,12 +35,12 @@
     }
 }
 
-.bread-crumbs__box {
+.bread-crumbs__nav {
     @media screen and (max-width: 480px) {
         margin-bottom: 10px;
     }
 }
-.furniture-nav__list {
+.bread-crumbs__list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -48,14 +48,14 @@
 
 }
 
-.furniture-nav__item {
+.bread-crumbs__item {
     margin-right: 13px;
         &:last-child {
             margin-right: 0;
         }
 }
 
-.furniture-nav__link {
+.bread-crumbs__link {
     color: #dedede;
     font-size: 0.813rem;
     font-weight: 400;
