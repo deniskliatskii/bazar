@@ -18,20 +18,20 @@
         
         <div class="top-header__wrap">
             <div class="container top-header">
-                <form class="help">
-                    <select class="help__item select-currency" name="currency" id="currency">
+                <form class="select-header">
+                    <select class="select-header__item select-currency" name="currency" id="currency">
                         <option class="currency-option">USD</option>
                         <option class="currency-option" value="categories 2">Euro</option>
                         <option class="currency-option" value="categories 3">Euro</option>
                     </select>
 
-                    <select class="help__item select-currency" name="currency" id="currency">
+                    <select class="select-header__item select-currency" name="currency" id="currency">
                         <option class="currency-option">English</option>
                         <option class="currency-option" value="categories 2">Deutsch</option>
                         <option class="currency-option" value="categories 3">Rus</option>
                     </select>
 
-                    <select class="help__item select-currency" name="currency" id="currency">
+                    <select class="select-header__item select-currency" name="currency" id="currency">
                         <option class="currency-option">Help</option>
                         <option class="currency-option" value="categories 2">Help</option>
                         <option class="currency-option" value="categories 3">Help</option>
@@ -88,11 +88,11 @@
                     </form>
     
                     <!-- responsive nav -->
-                    <input class="input__menu" type="checkbox" name="menu" id="menu">
-                    <label class="label__menu" for="menu">
+                    
+                    <div class="label__menu">
                         <i class="fas fa-bars"></i>
-                    </label>
-                    <label for="menu" class="overlay-menu"></label>
+                    </div>
+                    <div class="overlay-menu"></div>
                     
                     <!-- responsive nav -->
                     
@@ -160,6 +160,7 @@
                                 
                                 <div class="gallery-tumbs">
                                     <ul class="gallery-item images">
+
                                         <li class="gallery-min">
                                             <a href="img/gallery/image_ful-1.jpg">
                                                 <img src="img/gallery/image_tumb-1.jpg" alt="Gallery tumbs">
@@ -209,8 +210,8 @@
                                     </ul>
                                 </div>
                                 
-                                <button class="arow-btn arrow-next arrow-next__gallery activ-arrow"></button>
-                                <button class="arow-btn arrow-prew arrow-prew__gallery"></button>
+                                <button class="arow-btn arrow-next arrow-next__gallery"></button>
+                                <button class="arow-btn arrow-prew arrow-prew__gallery activ-arrow"></button>
                                 
                             </div> <!-- ./Gallery Box -->
                             
@@ -226,7 +227,13 @@
                             <div class="products__title">
                                 <h1 class="products__name">Sunbaby Magic Bear Chair</h1>
                                 <div class="products__rating">
-                                    <span class="stars stars-products"></span>
+                                    <div class="rating-box">
+                                        <i class="far fa-star active-star" data-index="1"></i>
+                                        <i class="far fa-star" data-index="2"></i>
+                                        <i class="far fa-star" data-index="3"></i>
+                                        <i class="far fa-star" data-index="4"></i>
+                                        <i class="far fa-star" data-index="5"></i>
+                                    </div>
                                     <span class="count-rating">(0 reviews)</span>
                                     <a class="add-review" href="#">Add Your Review</a>
                                 </div>
@@ -238,7 +245,7 @@
                             </div>
                             
                             <div class="to-cart">
-                                <a class="btn__to-cart" href="#">Add to cart</a>
+                                <button class="btn__to-cart" href="#">Add to cart</button>
                                 <button class="btn-border wishlist"><i class="far fa-heart"></i></button>
                                 <button class="btn-border compare"><i class="fas fa-exchange-alt"></i></button>
                                 <button class="btn-border message"><i class="far fa-envelope"></i></button>
@@ -289,9 +296,9 @@
                 <div class="detailed-info__container">
                     <ul class="tabs__list">
                         <li class="tabs__item"><a class="tabs__link" href="#description">Description</a></li>
-                        <li class="tabs__item"><a class="tabs__link" href="#reviews">reviews(0)</a></li>
-                        <li class="tabs__item"><a class="tabs__link" href="#specification">specification</a></li>
-                        <li class="tabs__item"><a class="tabs__link" href="#custom">custom tab</a></li>
+                        <li class="tabs__item"><a class="tabs__link active-tab" href="#reviews">Reviews(0)</a></li>
+                        <li class="tabs__item"><a class="tabs__link" href="#specification">Specification</a></li>
+                        <li class="tabs__item"><a class="tabs__link" href="#custom">Custom tab</a></li>
                     </ul>
     
                     <div class="tabs-content__wrap">
@@ -310,7 +317,17 @@
                             <p class="reviews-title">Add a review</p>
                             <p class="rating-title">Your Rating</p>
                             <form class="form-review" action="">
-                                <p class="choice-rating">Bad<span class="stars"></span>Good</p>
+                                <div class="rating-tabs__wrap">
+                                    <p class="choice-rating">Bad</p>
+                                        <div class="rating-tabs">
+                                            <i class="far fa-star active-star" data-index="1"></i>
+                                            <i class="far fa-star" data-index="2"></i>
+                                            <i class="far fa-star" data-index="3"></i>
+                                            <i class="far fa-star" data-index="4"></i>
+                                            <i class="far fa-star" data-index="5"></i>
+                                        </div>
+                                    <p class="choice-rating">Good</p>
+                                </div>
                                 <label for="review">Your Review</label>
                                 <textarea name="review" id="review" cols="30" rows="10"></textarea>
                                 <div class="input-review__wrap">
@@ -490,8 +507,8 @@
                             <label for="newsletter"><i class="fas fa-envelope fa-envelope__newsletter"></i></label>
                             <input class="news__input-email" type="email" name="newsletter" id="newsletter"  placeholder="Enter your email address">
                         </div>
-                            <button class="news__input-submit" type="submit"></button>
-                        </form>
+                        <button class="news__input-submit" type="submit"></button>
+                    </form>
                 </div>
             </section>
         <div class="footer-top">
@@ -593,6 +610,8 @@
                 </div>
            </div>
         </div>
+
+        
     </footer> <!-- ./footer -->
     
     <!-- ********************************************* -->

@@ -5,6 +5,9 @@
     display: block;
     padding: 13px 11px;
     border: 1px solid #000;
+        @media screen and (max-width: 1025px) {
+            padding: 10px 5px;
+        }
     transition: color .2s ease-in-out;
     & .fab {
         margin-right: 8px;

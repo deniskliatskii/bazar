@@ -65,6 +65,7 @@
     border: 1px solid #000;
     padding: 11px;
     display: inline-block;
+    outline-color: $accentColor;
     @media screen and (max-width: 550px) {
         padding: 7px;
     }
@@ -72,12 +73,17 @@
 
 .btn__to-cart {
     display: inline-block;
+    outline: none;
+    border: none;
+    background: none;
     background: $accentColor;
     font-size: 13px;
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
     padding: 14px 9px 13px 9px;
+    cursor: pointer;
+    margin-right: 5px;
     &::before {
         content: "\f291" ;
         font-weight: 900;

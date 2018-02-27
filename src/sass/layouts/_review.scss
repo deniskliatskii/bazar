@@ -90,12 +90,12 @@
     color: #676767;
     font-size: 14px;
     font-weight: 400;
-    & > span {
-        margin: 0 20px;
-    }
-    margin-bottom: 31px;
+       
 }
 
+.rating-tabs {
+    margin: 0 20px;
+}
 
 .active-tab {
     color: $accentColor;
@@ -128,4 +128,10 @@
     @media screen and (max-width: 1220px) {
         flex-wrap: wrap;
     }
+}
+
+.rating-tabs__wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 31px;
 }

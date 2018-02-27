@@ -5,57 +5,65 @@ $(function () {
 * GALLERY
 *
 */
+
 var imagePos = 0; 
 var widthImages = $('.gallery-min').outerWidth();
 var galleryImagesLenght = $('.gallery-min').length;
 var galleryWrap = $('.gallery-tumbs').width();
 var movPos = widthImages * galleryImagesLenght - galleryWrap;
 
-    // Left move NEXT
-    $('.arrow-next__gallery').click(function () {
-        $('.arrow-prew__gallery').addClass('activ-arrow');
-        imagePos -= widthImages;
-        $('.gallery-item').css('position', 'relative');
+        // Right move PREW
 
-        if (imagePos < - movPos) {
-            imagePos = 0;
-        }
-        $('.gallery-item').css( 'left', imagePos );
-    });
+        $('.arrow-prew__gallery').click(function () {
+            $('.arrow-next__gallery').addClass('activ-arrow');
+            imagePos -= widthImages;
+            $('.gallery-item').css('position', 'relative');
 
-    // Right move PREW
-    $('.arrow-prew__gallery').click(function () {
-        if (imagePos < 0) {
-            imagePos += widthImages;
-            $('.gallery-item').css('left', imagePos);
-        }
-        else {
-            $('.arrow-prew__gallery').removeClass('activ-arrow');
-        }
-    });
+            if (imagePos < - movPos) {
+                imagePos = 0;
+            }
+            $('.gallery-item').css( 'left', imagePos );
+        });
+
+
+        // Left move NEXT
+
+        $('.arrow-next__gallery').click(function () {
+            if (imagePos < 0) {
+                imagePos += widthImages;
+                $('.gallery-item').css('left', imagePos);
+            }
+            else {
+                $('.arrow-next__gallery').removeClass('activ-arrow');
+            }
+        });
 
 
 
     //Gallery full images
+
     $('.gallery-min a').click(function (event) {
         event.preventDefault();
         var imgAtribut = $(this).attr('href');
         $('.gallery-prewiew img').attr( { src: imgAtribut } );
     });
 
+
     // Modal window end overlay for gallery images
+
     $('.expand-btn').click(function () {
         var modalWindowContent = $('.gallery-prewiew img').attr('src');
         $('body').append('<img class="modal-images">');
-        $('.modal-images').attr({ src: modalWindowContent});
+        $('.modal-images').attr({ src: modalWindowContent}).fadeIn(900);
 
-        $('body').append(' <div class="modal-overlay"> ');
-            
-        $('.modal-overlay').click(function () {
-            $('.modal-overlay').remove();
-            $('.modal-images').remove();
+        $('.overlay-menu').fadeIn(400);
+                    
+        $('.overlay-menu').click(function () {
+            $('.overlay-menu').fadeOut(400);
+            $('.modal-images').fadeOut(400);
         });
     });
+
 
 /*
 *
@@ -79,11 +87,11 @@ var movPos = widthImages * galleryImagesLenght - galleryWrap;
 
 /*
 *
-* Tabs
+* TABS
 *
 */
 
-    $('.tabs-content__wrap > div:not(:first)').hide();
+    $('.tabs-content__wrap > div:not(:nth-child(2))').hide();
 
     $('.tabs__list a').click(function (event) {
         event.preventDefault();
@@ -98,6 +106,26 @@ var movPos = widthImages * galleryImagesLenght - galleryWrap;
 
     });
 
+    /*
+    *
+    * RESPONSIVE MENU
+    * 
+    */
+
+    // Open menu
+
+    $('.label__menu').click(function () {
+        $('.overlay-menu').fadeIn(400);
+        $('.nav-header').css('transform', 'rotateY(0)');
+    });
+
+
+    // Close menu
+
+    $('.overlay-menu').click(function () {
+        $('.overlay-menu').fadeOut(400);
+        $('.nav-header').css('Transform', 'rotateY(90deg)');
+    });
     
 /*
 *
@@ -121,6 +149,26 @@ var movPos = widthImages * galleryImagesLenght - galleryWrap;
         }
     });
  
+/*
+*
+* STAR RATING
+*
+*/
 
+    $('.rating-box i').click(function (event) {
+        $('.rating-box i').removeClass('active-star');
+        $(this).addClass('active-star');
+        var index = parseInt($(this).attr('data-index'));
+        $('.count-rating').text('(' + index + ' reviews'+')');
+        $('.rating-box').addClass('block-rating');
+    })
+
+    $('.rating-tabs i').click(function (event) {
+        $('.rating-tabs i').removeClass('active-star');
+        $(this).addClass('active-star');
+        var index = parseInt($(this).attr('data-index'));
+        $('a[href*="#reviews"]').text('Reviews ' + '(' + index + ')');
+        $('.rating-tabs').addClass('block-rating');
+    })
 });
 
